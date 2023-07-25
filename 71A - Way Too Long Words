@@ -1,0 +1,31 @@
+#include<iostream>
+#include<conio.h>
+#include<cstring>
+using namespace std;
+int main()
+{
+    int i,t;
+    cin>>t;
+
+    for(i=1; i<=t; i++)
+    {
+        string n;
+        cin>>n;
+
+        int length = n.length();
+
+        if ( length <= 10)
+        {
+            cout<<n<<endl;
+        }
+        else if ( length > 10 )
+        {
+            cout<<n[0];
+            cout<<length - 2;
+            cout<<n[length - 1]<<endl;
+        }
+    }
+
+
+    return 0;
+}
